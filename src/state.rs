@@ -1,7 +1,10 @@
 use std::{sync::Arc, time::Instant};
 
 use wgpu::PresentMode;
-use winit::{event::{MouseButton, WindowEvent}, window::Window};
+use winit::{
+    event::{MouseButton, WindowEvent},
+    window::Window,
+};
 
 pub struct State<'a> {
     pub surface: wgpu::Surface<'a>,
